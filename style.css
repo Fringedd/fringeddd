@@ -1,0 +1,304 @@
+body{
+    padding:0;
+    margin:0;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    width:100%;
+    height: 950px;
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:15px;
+}
+
+h2,h4,p,ul,li{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.container2{
+    width: 1000px;
+    height:30rem;
+    background-color:white;
+    border-radius:15px;
+    display: flex;
+}
+
+.left{
+    width:50%;
+    height: 100%;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: bottom 2vh right 4vw, top 30vh left 30vw;
+}
+
+.img-container{
+    width:100%;
+    height:100%;
+    padding-top:3rem;
+    position: absolute;
+    right: 50px;
+   
+}
+
+.img-container img{
+    max-width:100%;
+    max-height: 100%;
+}
+
+.right{
+    width: 50%;
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    z-index:1;
+    top: 200px;
+}
+
+
+  
+  h1{
+      font-size:2.0rem;
+      padding:0;
+      padding-top:4.5rem;
+      margin:0;
+      margin-bottom:3rem;
+      color:black;
+      font-weight: bold;
+
+  }
+  
+  
+
+
+  
+
+  .content{
+      position: relative;
+      padding-bottom:5px;
+      width: 400px;
+  }
+
+  .content::before{
+    position:absolute;
+    width:100%;
+    content: '';
+    height:0.5px;
+    bottom:0;
+    background-color: gray;
+    display: block;
+  }
+
+  
+
+  
+  .question {
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0px 5px;
+    display: block;
+    width:100%;
+    cursor: pointer;
+  }
+
+  .questions:hover ~ .question{
+    /*color:#FEA443;*/
+    color:darkorange;
+  }
+    
+
+  .plus {
+    position: absolute;
+    margin-left: 10px;
+    top: 10px;
+    z-index: 5;
+    line-height: 100%;
+    user-select: none;
+    transition: .3s ease;
+    left:360px;
+  
+  }
+  .answers {
+    padding: 0px 3px;
+    margin: 6px 0;
+    width:100%;
+    height: 0;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    opacity: 1;
+    transition: .3s ease;
+    color:black;
+    font-size: 13px;
+  }
+
+  .questions:checked ~ .answers{
+    height: auto;
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .questions:checked ~ .question{
+    font-weight: bold;
+  }
+
+  .questions{
+      position:relative;
+  }
+
+  
+
+  .questions:checked ~ .plus {
+    transform: rotate(180deg);
+  
+  }
+
+  .questions {
+    display: none;
+    
+  }
+
+  @media only screen and (max-width: 376px) {
+   .container2{
+       flex-direction:column;
+       display: flex;
+       width: 350px;
+    height:40rem;
+   }
+   .left{
+       width: 100%;
+    height: 30%;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+   }
+   .img-container{
+       max-width:100%;
+       max-height:100%;
+       top: -140px;
+       left: 50px;
+   }
+   .right{
+       width: 100%;
+       height: 70%;
+       top:-60px;
+   }
+   .box{
+        position: absolute;
+        z-index:1;
+        top: 125px;
+        right:265px;
+        width: 100px;
+        height: 100px;
+    }
+    .content{
+        width:325px;
+    }
+    .plus{
+        left:300px;
+    }
+    h1{
+        text-align: center;
+    }
+   }
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*label::after {
+    content: url(./images/icon-arrow-down.svg);
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 350px;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    font-family: "Spicy Rice", cursive;
+  }
+  label {
+    cursor: pointer;
+  }
+input[type="checkbox"]:checked  + label::after {
+  transform: rotate(180deg);
+  content: "";
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-image: url(./images/icon-arrow-down.svg);
+  background-size:contain;
+  transform:rotate(180deg);
+}
+
+div {
+    position: relative;
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+  }
+
+  p {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 30px;
+    transition: max-height 0.4s ease;
+    font-family: "Habibi", serif;
+  }
+
+  input[type="checkbox"]:checked ~ h2 ~ p {
+    max-height: 80px;
+  } */
